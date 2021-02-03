@@ -1,20 +1,50 @@
 // out: ./main.css, compress: true, sourceMap: true
-@green_color: #5fb709;
+@font-face{
+font-family: KayakSans;
+src: url(/assets/fonts/Kayak\ Sans\ Regular.otf);
+}
+@font-face{
+   font-family: KayakSans-Light;
+   src: url(/assets/fonts/Kayak\ Sans\ Light.otf);
+}
+@font-face {
+   font-family: KayakSans-Bold;
+   src: url(/assets/fonts/Kayak\ Sans\ Bold.otf);
+}
 
+.text--bold{
+   font-family: KayakSans-Bold;
+}
 
+.text--light{
+   font-family:KayakSans-Light;
+}
 
+html,body{
+   color: black;
+   font-family: KayakSans ;
 
+}
 
 .text--green{
    color: #5fb709;
 } 
 
+.btn{ 
+   color: white;
+   background-color: #5fb709;
+   border-radius: 10px;
+   border-width: 0px;
+   font-family: KayakSans-Bold;
+   font-size: 25px;
+   height: 70px;
+   line-height: 70px;
+}
 
 
 
-.text--green{
-   color:  @green_color;
-} 
+
+
 
 
 @import "./blocks/_header.less";
