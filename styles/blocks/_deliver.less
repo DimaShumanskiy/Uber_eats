@@ -1,1 +1,35 @@
 // main ./../main.less
+.deliver{ 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 70px;
+   margin-bottom: 215px;
+   position: relative;
+   .deliver__content{ 
+      margin-left: 145px;
+      .deliver__title{
+         font-size: 50px;
+         line-height: 70px;
+         width: 660px;
+      }
+      .deliver__title::after{
+         content:url(/img/deliver/Layer\ 16.png);
+         position: absolute;
+         top: -120px;
+         right: 400px;
+      }
+      .deliver__address{ 
+         width: 480px;
+         height: 70px;
+         border-radius: 10px;
+         border: solid 1px #9b9a9a;
+         padding-left: 35px;
+         font-size: 17px;
+      }
+      .deliver__btn{
+         width: 200px;
+         
+      }
+   }
+}
